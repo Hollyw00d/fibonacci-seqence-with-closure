@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Fibonacci Sequence with a Closure</title>
+
+    <script type="text/javascript">
+
+    function fib() {
+        var first = 0;
+        var second = 1;
+        var newSecond = 0;
+
+        function nacci() {
+            newSecond = first + second;
+
+            first = second;
+            second = newSecond;
+
+           console.log(newSecond);
+        }
+        return nacci;
+    }
+
+    var fibCounter = fib();
+    fibCounter();
+    fibCounter();
+    fibCounter();
+    fibCounter();
+    fibCounter();
+    fibCounter();
+
+    </script>
+
+
+</head>
+<body>
+
+<h1>Fibonacci Sequence with a Closure</h1>
+
+</body>
+</html>
